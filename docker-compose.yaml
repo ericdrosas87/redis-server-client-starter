@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  redis:
+    build: ./
+    cap_add:
+    - SYS_RESOURCE
+    ports:
+    - "6379:6379"
